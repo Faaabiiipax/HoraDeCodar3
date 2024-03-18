@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade</title>
+</head>
+<body>
+    <script>
+        /*Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.*/
+
+        var alunosAprovados = 0; // Variável para contar a quantidade de alunos aprovados
+var continuar; // Variável para armazenar a resposta do usuário
+
+while (true) {
+    // Solicitar ao usuário que insira as notas do aluno
+    var nota1 = parseFloat(prompt("Digite a primeira nota do aluno:"));
+    var nota2 = parseFloat(prompt("Digite a segunda nota do aluno:"));
+
+    // Calcular a média das notas
+    var media = (nota1 + nota2) / 2;
+
+    // Verificar se o aluno está aprovado
+    if (media >= 9.5) {
+        alunosAprovados++; // Incrementar o contador de alunos aprovados
+        alert("O aluno está aprovado com média " + media);
+    } else {
+        alert("O aluno está reprovado com média " + media);
+    }
+
+    // Perguntar se deseja calcular a média de outro aluno
+    continuar = prompt("Calcular a média de outro aluno? (S/N)");
+
+    // Verificar se o usuário deseja continuar
+    if (continuar !== "S") {
+        break; // Encerrar o loop se a resposta não for "S"
+    }
+}
+
+// Exibir a quantidade de alunos aprovados
+alert("Quantidade de alunos aprovados: " + alunosAprovados);
+    </script>
+</body>
+</html>

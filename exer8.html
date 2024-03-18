@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+    <script>
+        /*Ler um valor N e imprimir todos os valores inteiros entre 1 (inclusive) e N (inclusive). Considere que o N será sempre maior que ZERO.
+    N  é um valor informado pelo usuário*/
+
+var N = parseInt(prompt("Digite um valor inteiro maior que zero:"));
+
+// Verificar se N é maior que zero
+while (N <= 0 || isNaN(N)) {
+    N = parseInt(prompt("Digite um valor inteiro maior que zero:"));
+}
+
+// Após sair do loop, sabemos que N é maior que zero
+// Agora podemos imprimir todos os valores inteiros entre 1 e N
+for (var i = 1; i <= N; i++) {
+    console.log(i);
+}
+    </script>
+</body>
+</html>

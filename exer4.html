@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aividade</title>
+</head>
+<body>
+    <script>
+        /*Faça um algoritmo que calcule e escreva a média aritmética dos números inteiros entre 15 (inclusive) e 100 (inclusive).*/
+
+ var soma = 0;
+var quantidadeDeNumeros = 0;
+
+// Percorrer todos os números inteiros entre 15 e 100 (inclusive)
+for (var i = 15; i <= 100; i++) {
+    // Adicionar o número à soma
+    soma += i;
+    // Incrementar a quantidade de números
+    quantidadeDeNumeros++;
+}
+
+// Calcular a média aritmética dividindo a soma pela quantidade de números
+var media = soma / quantidadeDeNumeros;
+
+// Escrever a média aritmética na tela
+document.write("A média aritmética dos números inteiros entre 15 e 100 é: " + media);
+    </script>
+</body>
+</html>
